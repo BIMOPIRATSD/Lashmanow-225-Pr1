@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfApp3.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page5">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Число A1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="Число B1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+        <TextBlock Text="Число C1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+        <TextBlock Text="Число A2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="2"/>
+        <TextBlock Text="Число B2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+        <TextBlock Text="Число C2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+        <TextBox x:Name="Text1" Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="Text2" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="Text3" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="Text4" Grid.Row="0" Grid.Column="3"/>
+        <TextBox x:Name="Text5" Grid.Row="1" Grid.Column="3"/>
+        <TextBox x:Name="Text6" Grid.Row="2" Grid.Column="3"/>
+        <TextBox x:Name="Text7" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Height="100" VerticalScrollBarVisibility="Visible" 
+                 IsReadOnly="True"/> 
+        <Button Content="Вычислить" Grid.Column="4" Grid.Row="3" Width="150" Click="Button_Click"/>
+    </Grid>
+</Page>
